@@ -1,0 +1,115 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- nlu_fallback
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- bot_challenge
+- access_application
+- application_fee
+- fee_reimbursed
+- exam
+- ranking
+- locality
+- tourist
+- application_status
+- application_acceptance
+- find_place
+- stay
+- cost
+- transport_mode
+- transport_use
+- student_card
+- internet
+- lunch
+- ssn
+- housing
+- study
+- courses
+- bank
+- credit_card
+- account
+- events
+- hang_out
+- corona_testing
+- available_jobs
+- get_jobs
+responses:
+  utter_greet:
+  - text: Hey! Welcome to the website of University of South Carolina, Columbia. How can I help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_no_more:
+  - text: Sorry, that's all I have!
+  utter_iamabot:
+  - text: I am a bot, working for University of South Carolina, Columbia.
+  utter_access_application:
+  - text: 'Please refer: https://sc.edu/apply/index.php'
+  utter_application_fee:
+  - text: $65 (Common Application Fee without waiver)
+  utter_fee_reimbursed:
+  - text: 'Please refer: https://sc.edu/about/offices_and_divisions/bursar/refunds/index.php'
+  utter_exam:
+  - text: We do not require scores from the GRE or MAT for the MLIS degree. If you have current scores and would like to submit them with the application, we will review them with the other application materials.
+  utter_ranking:
+  - text: We are ranked in the top 20 of ALA accredited schools by U.S. News & World Report.
+  utter_locality:
+  - text: It has seven satellite campuses throughout the state and its main campus covers over 359 acres (145 ha) in downtown Columbia not far from the South Carolina State House.
+  utter_tourist:
+  - text: 'Please refer: https://www.tripadvisor.in/AttractionsNear-g54184-d126619-University_of_South_Carolina-Columbia_South_Carolina.html'
+  utter_application_status:
+  - text: Please contact your study consultant.
+  utter_application_acceptance:
+  - text: You will be communicated from our end via email.
+  utter_find_place:
+  - text: The campus housing is mainly for freshmen students. Most of univeristy's students and visitors use off-campus housing. Many find www.zillow.com useful for finding an appartment or a room.
+  utter_stay:
+  - text: 'Please visit: https://sc.edu/about/offices_and_divisions/housing/'
+  utter_cost:
+  - text: Typical student apartment price in Columbia range from 500-1500 USD. A room can be found at 350-600 USD.
+  utter_transport_mode:
+  - text: University Bus facility / Walking based on location data / Cab Services
+  utter_transport_use:
+  - text: There is a public bus service called COMET. The university has also a bus line connecting housing places to the campus.
+  utter_student_card:
+  - text: 'Please refer: https://sc.edu/about/offices_and_divisions/carolinacard/'
+  utter_internet:
+  - text: If you have EDUROAM account, use your home university username and password.
+  utter_lunch:
+  - text: "There's a number of lunch places within and around the campus. Please see the lunch places here: https://sc.edu/experience/grab_a_bite/campus_restaurants_list.php"
+  utter_ssn:
+  - text: Please call SSO-Social Security Office (866-964-7594). You need to set up an appointment and go to their office at 1835 Assembly st. You need your id (passport, visa) and documents proving your studies here.
+  utter_housing:
+  - text: See Info at https://sc.edu/about/offices_and_divisions/housing/
+  utter_study:
+  - text: Please go to http://my.sc.edu/
+  utter_courses:
+  - text: Please contact your course professor or teaching assistant. You may also find a mentor at USC.
+  utter_bank:
+  - text: There are many major banks in Columbia, eg - Bank of America, Wells&Fargo. If you open a savings account you get a debit card and 0 monthly fee if the account has always a minimum of 500 USD balance.
+  utter_credit_card:
+  - text: A student credit card helps you build a good credit score before graduating. This way, you can avail credit at competitive terms in the future, provided you manage your credit card well. This type of credit card offers various perks like cashback and discounts that can help you save a lot of money.
+  utter_account:
+  - text: A checking account is a bank account you can write checks from, or access several other ways, which tends to make it your go-to, daily transaction bank account. A savings account is where you stash funds that you aren't ready to use yet, often with the goal of accumulating more.
+  utter_events:
+  - text: 'See upcoming events here: https://www.sc.edu/calendar/uofsc/student/index.php'
+  utter_hang_out:
+  - text: Start by visiting historic horse shoe, Russel house area and Five Points.
+  utter_corona_testing:
+  - text: Please visit https://sc.edu/about/offices_and_divisions/student_health_services/medical-services/covid-19/covid19_testing/on-campus_testing/index.php
+  utter_available_jobs:
+  - text: Information can be found at https://sc.edu/about/offices_and_divisions/career_center/student_services/gain_experience/part-time_jobs/index.php
+  utter_get_jobs:
+  - text: 'Career center is the best place to explore different on-campus careers. For more information, follow this link: https://sc.edu/about/offices_and_divisions/career_center/index.php'
+actions:
+- utter_did_that_help
+- utter_hang_out

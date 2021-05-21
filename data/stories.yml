@@ -1,0 +1,595 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: access application path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: access_application
+  - action: utter_access_application
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: access application path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: access_application
+  - action: utter_access_application
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: application fee path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_fee
+  - action: utter_application_fee
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: application fee path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_fee
+  - action: utter_application_fee
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  
+- story: fee reimbursed path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fee_reimbursed
+  - action: utter_fee_reimbursed
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fee reimbursed path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fee_reimbursed
+  - action: utter_fee_reimbursed
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: exam path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: exam
+  - action: utter_exam
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: exam path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: exam
+  - action: utter_exam
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: ranking path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ranking
+  - action: utter_ranking
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: ranking path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ranking
+  - action: utter_ranking
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: locality path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: locality
+  - action: utter_locality
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: locality path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: locality
+  - action: utter_locality
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: tourist path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tourist
+  - action: utter_tourist
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: tourist path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tourist
+  - action: utter_tourist
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: application status path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_status
+  - action: utter_application_status
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: application status path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_status
+  - action: utter_application_status
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: application acceptance path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_acceptance
+  - action: utter_application_acceptance
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: application acceptance path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_acceptance
+  - action: utter_application_acceptance
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: find place path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_place
+  - action: utter_find_place
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: find place path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_place
+  - action: utter_find_place
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: stay path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stay
+  - action: utter_stay
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: stay path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stay
+  - action: utter_stay
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: cost path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cost
+  - action: utter_cost
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: cost path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cost
+  - action: utter_cost
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: transport mode path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transport_mode
+  - action: utter_transport_mode
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: transport mode path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transport_mode
+  - action: utter_transport_mode
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: transport use path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transport_use
+  - action: utter_transport_use
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: transport_use path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transport_use
+  - action: utter_transport_use
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: student card path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: student_card
+  - action: utter_student_card
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: student card path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: student_card
+  - action: utter_student_card
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: internet path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: internet
+  - action: utter_internet
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: internet path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: internet
+  - action: utter_internet
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: lunch path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: lunch
+  - action: utter_lunch
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: lunch path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: lunch
+  - action: utter_lunch
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: ssn path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ssn
+  - action: utter_ssn
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: ssn path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ssn
+  - action: utter_ssn
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: housing path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: housing
+  - action: utter_housing
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: housing path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: housing
+  - action: utter_housing
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: study path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: study
+  - action: utter_study
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: study path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: study
+  - action: utter_study
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: courses path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses
+  - action: utter_courses
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: courses path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses
+  - action: utter_courses
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: bank path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bank
+  - action: utter_bank
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: bank path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bank
+  - action: utter_bank
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: credit card path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: credit_card
+  - action: utter_credit_card
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: credit card path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: credit_card
+  - action: utter_credit_card
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: account path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account
+  - action: utter_account
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: account path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account
+  - action: utter_account
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: events path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: events
+  - action: utter_events
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: ssn path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: events
+  - action: utter_events
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: hang out path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hang_out
+  - action: utter_hang_out
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: hang out path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hang_out
+  - action: utter_hang_out
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: corona testing path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: corona_testing
+  - action: utter_corona_testing
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: corona testing path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: corona_testing
+  - action: utter_corona_testing
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: available jobs path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: available_jobs
+  - action: utter_available_jobs
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: available jobs path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: available_jobs
+  - action: utter_available_jobs
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: get jobs path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_jobs
+  - action: utter_get_jobs
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: get_jobs path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_jobs
+  - action: utter_get_jobs
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+- story: interactive_story_1
+  steps:
+  - intent: nlu_fallback
+  - action: utter_hang_out
+  - action: utter_did_that_help
