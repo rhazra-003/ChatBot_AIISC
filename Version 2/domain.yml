@@ -1,0 +1,162 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- bot_challenge
+- access_application
+- application_fee
+- fee_reimbursed
+- exam
+- ranking
+- locality
+- tourist
+- application_status
+- application_acceptance
+- find_place
+- stay
+- cost
+- transport_mode
+- transport_use
+- student_card
+- internet
+- lunch
+- ssn
+- housing
+- study
+- courses
+- bank
+- credit_card
+- account
+- events
+- hang_out
+- corona_testing
+- available_jobs
+- get_jobs
+- branch
+- deadline_ug
+- deadline_transfer
+- requirements
+- scholarships
+- decision_department
+- receive_application
+- coronavirus
+- health_services
+- form_request
+- campus
+- international_drivers_licence
+- foreign_licence
+- applying_licence
+- driving_test
+- airport_transfer
+
+responses:
+  utter_greet:
+  - text: Hey! Welcome to the website of University of South Carolina, Columbia. How can I help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_no_more:
+  - text: Sorry, that's all I have!
+  utter_iamabot:
+  - text: I am a bot, working for University of South Carolina, Columbia.
+  utter_access_application:
+  - text: Please refer "https://sc.edu/apply/index.php"
+  utter_application_fee:
+  - text: $65 (Common Application Fee without waiver)
+  utter_fee_reimbursed:
+  - text: Direct deposit to your bank account is the most convenient way to receive your student account refunds. Set up direct deposit through Self Service Carolina in the account information tab. Otherwise, a paper check will be issued. If the student’s address is incorrect, you may make the change on SSC.
+  utter_exam:
+  - text: We do not require scores from the GRE or MAT for the MLIS degree. If you have current scores and would like to submit them with the application, we will review them with the other application materials.
+  utter_ranking:
+  - text: We are ranked in the top 20 of ALA accredited schools by U.S. News & World Report.
+  utter_locality:
+  - text: It has seven satellite campuses throughout the state and its main campus covers over 359 acres (145 ha) in downtown Columbia not far from the South Carolina State House.
+  utter_tourist:
+  - text: Please refer "https://www.tripadvisor.in/AttractionsNear-g54184-d126619-University_of_South_Carolina-Columbia_South_Carolina.html"
+  utter_application_status:
+  - text: Please contact your dept. consultant.
+  utter_application_acceptance:
+  - text: The Graduate School will email you notifying you of your official decision. 
+  utter_find_place:
+  - text: The campus housing is mainly for freshmen students. Most of univeristy's students and visitors use off-campus housing. Many find www.zillow.com useful for finding an appartment or a room.
+  utter_stay:
+  - text: Please visit "https://sc.edu/about/offices_and_divisions/housing/"
+  utter_cost:
+  - text: Typical student apartment price in Columbia range from 500-1500 USD. A room can be found at 350-600 USD.
+  utter_transport_mode:
+  - text: University Bus facility / Walking based on location data / Cab Services
+  utter_transport_use:
+  - text: There is a public bus service called COMET. The university has also a bus line connecting housing places to the campus.
+  utter_student_card:
+  - text: First year students, in order to receive your CarolinaCard upon move-in you must upload your photo and sign the cardholder agreement.  Transfer students, please follow the requirements above in order to pick up your CarolinaCard in our office in the basement of the Russell House Student Union on Greene Street.  Faculty and staff, you will also need to follow the requirements above and come to the CarolinaCard office inside the Russell House.
+  utter_internet:
+  - text: If you have EDUROAM account, use your home university username and password.
+  utter_lunch:
+  - text: There's a number of lunch places within and around the campus. Please see the lunch places here "https://sc.edu/experience/grab_a_bite/campus_restaurants_list.php"
+  utter_ssn:
+  - text: Please call SSO-Social Security Office (866-964-7594). You need to set up an appointment and go to their office at 1835 Assembly st. You need your id (passport, visa) and documents proving your studies here. A field office representative is available to take your call Monday through Friday from 9AM-4PM. Their office is located at 11FL STHURMOND FEDERAL BUILDING COLUMBIA.
+  utter_housing:
+  - text: See Info at https://sc.edu/about/offices_and_divisions/housing/
+  utter_study:
+  - text: Please contact your course professor or teaching assistant. You may also find a mentor at USC.
+  utter_courses:
+  - text: Please contact your course professor or teaching assistant. You may also find a mentor at USC.
+  utter_bank:
+  - text: There are many major banks in Columbia, eg - Bank of America, Wells&Fargo. If you open a savings account you get a debit card and 0 monthly fee if the account has always a minimum of 500 USD balance.
+  utter_credit_card:
+  - text: A student credit card helps you build a good credit score before graduating. This way, you can avail credit at competitive terms in the future, provided you manage your credit card well. This type of credit card offers various perks like cashback and discounts that can help you save a lot of money.
+  utter_account:
+  - text: A checking account is a bank account you can write checks from, or access several other ways, which tends to make it your go-to, daily transaction bank account. A savings account is where you stash funds that you aren't ready to use yet, often with the goal of accumulating more.
+  utter_events:
+  - text: See upcoming events here "https://www.sc.edu/calendar/uofsc/student/index.php"
+  utter_hang_out:
+  - text: Start by visiting historic horse shoe, Russel house area and Five Points.
+  utter_corona_testing:
+  - text: Please visit "https://sc.edu/about/offices_and_divisions/student_health_services/medical-services/covid-19/covid19_testing/on-campus_testing/index.php"
+  utter_available_jobs:
+  - text: Information can be found at https://sc.edu/about/offices_and_divisions/career_center/student_services/gain_experience/part-time_jobs/index.php
+  utter_get_jobs:
+  - text: The USC Career Center is dedicated to supporting your needs at all stages of the process, whether you are still making decisions about your future direction, looking for hands-on experiences, or are ready for the next steps that will prepare you to live out your career goals.
+  utter_branch:
+  - text: It depends on your background, the requests are processed by case-by-case basis. You neeed to contact your dept coordinator.
+  utter_deadline_ug:
+  - text: Spring (January) semester > International freshman applications for the spring semester are due November 1. For students who submitted applications, all supplemental materials are due no later than December 1. Fall (August) semester > International freshman applications are due for the fall semester. All credentials are due by February 1. If you are applying for the South Carolina Honors College, you must submit your application and all supplemental materials by November 15.
+  utter_deadline_transfer:
+  - text: Please check here "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/deadlines/non-freshman_deadlines/index.php"
+  utter_requirements:
+  - text: Please visit "https://sc.edu/study/colleges_schools/graduate_school/apply/international_applicants/index.php"
+  utter_scholarships:
+  - text: Please check "https://sc.edu/study/colleges_schools/cic/internal/graduate/slis/studentservices/assistantships_scholarships_fellowships.php"
+  utter_decision_department:
+  - text: Application review schedules are at the discretion of the department. Contact your department or program director with questions about the schedule.
+  utter_receive_application:
+  - text: If you applied using the general graduate school application, check you application portal (https://www.applyweb.com/cgi-bin/ustat?formcode=uscgrad) for updates about where your application or document is in the process.  Otherwise, please follow instructions from the Arnold School of Public Health or Darla Moore School of Business for more information.
+  utter_coronavirus:
+  - text: Please visit "https://sc.edu/safety/coronavirus/"
+  utter_health_services:
+  - text: You should have health insurance. 
+  utter_form_request:
+  - text: Please visit "https://sc.edu/about/offices_and_divisions/international_student_services/forms-library/index.php"
+  utter_campus:
+  - text: Please see the campus buildings at https://sc.edu/about/offices_and_divisions/student_affairs/our_facilities/index.php
+  utter_international_drivers_licence:
+  - text: Students who have a valid International Driving Permit (IDP), along with a valid license from his or her home country should also have a South Carolina driver’s license before the 90 day period expires. The IDP must be obtained in your home country prior to entering the U.S.
+  utter_foreign_licence:
+  - text: Students with a driver’s license from another country or U.S. state are permitted to drive in the United States for a period of 90 days after their arrival. Before the 90 day period has expired, students must replace their driver’s license with a South Carolina driver’s license.Students from Taiwan and South Korea benefit from a reciprocal agreement allowing them to exchange their license from their home country for a license issued by the state of South Carolina, without requiring a written or practical exam.
+  utter_applying_licence:
+  - text: To apply for a car licence, student Visa Holders need> Passport with I-94 card or copy of Electronic I-94 number from i94.cbp.dhs.gov; I-20 or DS-2019 form; Certificate of Enrollment from the University of South Carolina which lists the student’s current local address (available at the Registrar’s Office, located at 1244 Blossom Street, on the first floor of the University Technology Services building). Social Security card or letter from Social Security Administration stating ineligibility for a social security number (letter is valid for only 90 days).
+  utter_driving_test:
+  - text: To get a South Carolina license, students will need to prove proficiency in their driving ability through a written test of the South Carolina traffic laws followed by a road skills test. To study for the written test, a copy of the South Carolina Driver's Manual may be downloaded (see helpful links). After passing the written test, a road test (or driving test) is required at the SCDMV located at 1630 Shop Road. Students must provide their own car or a friend's car in order to take the test. The driving test may be taken more than once if necessary.
+  utter_airport_transfer:
+  - text: If you are coming from a foreign country, you can apply for the free taxi ride from the airport to the place of stay, however you can use this only one time.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
