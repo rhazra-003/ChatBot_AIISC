@@ -1,0 +1,505 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - fine
+    - okay
+    - cool
+    - thank you
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: access_application
+  examples: |
+    - Where can I access the application form?
+    - Where can I apply?
+    - Where can I get the application form?
+    - Give me the application form
+    - Where I can avail the application form?
+    - How can I apply?
+    - Can I get the application form?
+    - Tell me where to apply
+    - Application form
+- intent: application_fee
+  examples: |
+    - How much is the application fee?
+    - What is the application fee?
+    - Tell me about the application fee
+    - Can I know the application fee?
+    - Application Fee
+    - How much I have to pay for the application fee?
+    - How much I need to pay for the application fee?
+    - Let me know about the application fee
+    - How much application fee I need to pay?
+    - How much application fee I have to pay?
+    - How much I have to pay as application fee?
+- intent: fee_reimbursed
+  examples: |
+    - What are the ways to get the application fee reimbursed?
+    - Can the application fee get reimbursed?
+    - How to get application fee reimbursed?
+    - Application fee reimbursed
+    - Tell me how to reimburse the application fee
+    - Can I get my application fee reimbursed?
+    - How to reimburse the application fee?
+    - I want to get my application fee reimbursed
+    - Reimburse my application fee
+    - Get my application fee reimbursed
+    - Fee reimburse
+- intent: exam
+  examples: |
+    - Is GRE/TOEFL/IELTS required?
+    - Is GRE required?
+    - IS TOEFL required?
+    - Is IELTS required?
+    - Is GRE/TOEFL/IELTS exam required?
+    - Is any exam required?
+    - Do I need to have GRE/TOEFL/IELTS score?
+    - Do I need to have GRE score?
+    - Do I need to have TOEFL score?
+    - Do I need to have IELTS score?
+    - GRE
+    - TOEFL
+    - IELTS
+- intent: ranking
+  examples: |
+    - What is the college ranking?
+    - What is the rank of the college?
+    - What is your rank?
+    - Tell me your rank
+    - Tell me your college ranking
+    - Can I know the college ranking?
+    - How good is the college in ranking?
+    - Is this a good college with respect to ranks?
+    - Ranking
+    - Rank
+- intent: locality
+  examples: |
+    - How is the locality of the college?
+    - Is the locality of the college good?
+    - Tell me about locality of the college
+    - Locality of the college
+    - Locality
+    - What is there in the locality of the college?
+    - How good is the locality of the college?
+    - Give me the locality of the college
+- intent: tourist
+  examples: |
+    - What are the tourist attractions around the college?
+    - Is there any tourist attractions around the college?
+    - Tourist attractions
+    - Tell me about the tourist attractions around the college
+    - Is there any place for visiting for the tourist?
+    - Is the area good for tourist attractions?
+    - Give me any nearby tourist attractions
+- intent: application_status
+  examples: |
+    - What is the status of my application?
+    - Where can I know about my application status?
+    - Can I know my application status?
+    - What is my application status?
+    - How can I know about my application status?
+    - Tell me my application status
+    - Get me my application status
+    - application status
+- intent: application_acceptance
+  examples: |
+    - When will I be notified of my acceptance?
+    - How I will be notified about my acceptance?
+    - How I will know about my acceptance?
+    - When I will know about my acceptance?
+    - Notify me about my acceptance
+    - Tell me how I be notified of my acceptance
+    - Application acceptance
+- intent: find_place
+  examples: |
+    - How to find a place to stay?
+    - How I can find a place to stay?
+    - Help me to find a place to stay
+    - Find me place to stay
+    - Tell me how to find a place to stay
+    - place to stay
+- intent: stay
+  examples: |
+    - Where to stay?
+    - Tell me where I can stay
+    - Tell me where to stay
+    - Where can I stay?
+    - Where will I stay?
+    - Where I can stay?
+- intent: cost
+  examples: |
+    - What is the typical cost for an apartment or a room?
+    - What is the cost for an apartment?
+    - What is the cost for a room?
+    - What is the cost of a room?
+    - What is the cost of an apartment?
+    - Cost of room
+    - Cost of apartment
+- intent: transport_mode
+  examples: |
+    - How does the transport work?
+    - What are available transport modes?
+    - Transport modes
+    - Transport methods
+    - Tell me how does transport work here
+    - What is scope of transportation?
+- intent: transport_use
+  examples: |
+    - Which means of transport to use?
+    - What transportation should I use?
+    - What transport service should I use?
+    - What transportation can I use?
+    - What transportation I cam use?
+    - Tell me which transportation I can use
+    - Transport to use
+- intent: student_card
+  examples: |
+    - How do I get my student card?
+    - Where can I get student card?
+    - How can I get my student card?
+    - How can one get the student card?
+    - Tell me where can I get the student card
+    - Student card
+    - From where I can get my student card?
+- intent: internet
+  examples: |
+    - How do I connect to the univeristy's network and Internet?
+    - How will I get the Internet?
+    - How can I get connected with univeristy's network?
+    - Internet
+    - University's network
+    - Is there any univeristy network and Internet?
+    - Tell me where I can get internet connection
+- intent: lunch
+  examples: |
+    - Where do students usually go for a lunch?
+    - Where can one have lunch?
+    - What are the lunch options?
+    - Lunch options
+    - Where can one take lunch?
+    - Tell me where can someone have lunch
+- intent: ssn
+  examples: |
+    - How do I get a social security number (SSN)?
+    - Where can I get a social security number (SSN)?
+    - Where to get SSN?
+    - Tell me how can one get SSN?
+    - Where to get social security number?
+    - Tell me how can one get social security number?
+    - What is the procedure to get a social security number?
+- intent: housing
+  examples: |
+    - Who to contact for housing questions?
+    - Where can I contact for housing issues?
+    - Tell me the contact of housing problems
+    - How can I get contact for housing questions?
+    - Contact for housing questions
+    - housing questions
+- intent: study
+  examples: |
+    - Who to contact for study questions?
+    - Where can I contact for study issues?
+    - Tell me the contact of study problems
+    - How can I get contact for study questions?
+    - Contact for study questions
+    - study questions
+    - Who can help me in study related issues?
+- intent: courses
+  examples: |
+    - How do I get information about the courses?
+    - Where can someone know about the courses?
+    - Tell me about the courses
+    - How can one find out the courses
+    - What are the courses that the college offers?
+    - What are some of the courses?
+    - Information about courses
+    - Can I know about the courses?
+    - Courses
+- intent: bank
+  examples: |
+    - Which bank is the best for students?
+    - What are the available banks?
+    - Is there any banking facility?
+    - Which bank can a student choose?
+    - Which bank will be suitable for me?
+    - Tell me about the banks present there?
+    - Tell me about banks
+    - Banks
+- intent: credit_card
+  examples: |
+    - Is credit card must for students ?
+    - Is credit card required?
+    - Is credit card required for me?
+    - Is credit card mandatory for students?
+    - Do I need credit card?
+    - Tell me if credit card is required
+    - Credit card
+- intent: account
+  examples: |
+    - What is checking and savings account?
+    - What is checking account?
+    - What is savings account?
+    - Tell me about checking account
+    - Tell me about savings account
+    - Checking and savings account
+    - Checking account
+    - Ssvings account
+- intent: events
+  examples: |
+    - What social events take place?
+    - Tell me about social events
+    - Is there any social events?
+    - Social events
+    - Do any social events take place in the college?
+    - What are some of the social events?
+    - Can I join any social events?
+    - How social events take place?
+- intent: hang_out
+  examples: |
+    - What are places students hang out?
+    - Tell me where to hang out
+    - Tell me some hang out place
+    - Where can one hang out?
+    - Where to hang out?
+    - Hnag out places
+    - Hang out
+    - Where students hang out in free time?
+- intent: corona_testing
+  examples: |
+    - Where to do Coronavirus testing or get a vaccine?
+    - Where to do Coronavirus testing?
+    - Where to get a vaccine?
+    - Coronavirus testing
+    - Coronavirus vaccine
+    - How can I do coronavirus testing?
+    - How can I get coro vaccine?
+    - Is there any coronavirus testing facility?
+- intent: available_jobs
+  examples: |
+    - What are the available on-campus jobs?
+    - Is there any on campus jobs?
+    - Which on campus jobs are available?
+    - How many on campus jobs are available?
+    - Is there any on campus jobs for students?
+    - Tell me what are the available on campus jobs
+    - available jobs
+    - available on campus jobs
+    - jobs
+- intent: get_jobs
+  examples: |
+    - How to get an on-campus job?
+    - How can I get an on campus job?
+    - How students can get an on campus job?
+    - Where will students get on campus job?
+    - How to get jobs?
+    - Get me an on campus job
+    - Tell me how can one get an on campus job?
+    - Get jobs
+- intent: branch
+  examples: |
+    - I come from X branch. Can I apply for Y branch?
+    - I am from X branch. Can I apply for Y branch?
+    - If I am from X branch, can I apply for Y branch?
+    - Can a student of X branch apply for Y branch?
+    - Can I apply for Y branch if I come from X branch?
+    - Can I apply for Y branch? I come from X branch.
+    - Can I apply for Y branch? I am from X branch.
+    - Can I apply for Y branch, if I come from X branch?
+- intent: deadline_ug
+  examples: |
+    - What is the deadline for undergraduate student applications?
+    - What is the deadline of undergraduate student applications?
+    - What is the last date of undergraduate student application?
+    - What is the last date for undergraduate student application?
+    - When can I last apply as undergraduate student?
+    - When I can last apply for undergraduate student courses?
+    - Tell me the deadline of undergraduate student applications
+    - Deadline of undergraduate courses
+- intent: deadline_transfer
+  examples: |
+    - What is the deadline for transfer student applications?
+    - What is the deadline of transfer student applications?
+    - What is the last date of transfer student application?
+    - What is the last date for transfer student application?
+    - When can I last apply as transfer student?
+    - When I can last apply for transfer student courses?
+    - Tell me the deadline of transfer student applications
+    - Deadline of transfer courses
+- intent: requirements
+  examples: |
+    - What are the requirements for international applicants?
+    - What are the required things for international applicants?
+    - What are the requirements for international students?
+    - What are the required things for international students?
+    - Tell me about the requirements for international students
+    - Tell me about the requirements of international students
+    - Tell me about the requirements for international applicants
+    - Tell me about the requirements of international applicants
+- intent: scholarships
+  examples: |
+    - Can I know more about Assistantships/ Scholarships/ Fellowships?
+    - Can I know more about Assistantships?
+    - Can I know more about Scholarships?
+    - Can I know more about Fellowships?
+    - Can I know about Assistantships/ Scholarships/ Fellowships?
+    - Can I know about Assistantships?
+    - Can I know about Scholarships?
+    - Can I know about Fellowships?
+    - Tell me about Assistantships/ Scholarships/ Fellowships?
+    - Tell me about Assistantships?
+    - Tell me about Scholarships?
+    - Tell me about Fellowships?
+- intent: decision_department
+  examples: |    
+    - When will my department make a decision?
+    - When will my department review the application?
+    - When will my department take a decision?
+    - When will my department make a decision about the application?
+    - When will my department take a decision about the application?
+    - When will the department take any decision?
+    - After which time my department will take any decision?
+- intent: receive_application
+  examples: |
+    - Has the graduate school received my application?
+    - Has my department received my application?
+    - Has the graduate school received the application?
+    - Has my department received the application?
+    - Can I know if the graduate school received my application?
+    - Can I know if my department received the application?
+    - Was my application received by the graduate school?
+    - Was my application received by my department?
+- intent: coronavirus
+  examples: |
+    - What is the situation regarding the coronavirus, COVID-19?
+    - What is the situation regarding the coronavirus?
+    - What is the situation regarding the COVID-19?
+    - How is the situation regarding the coronavirus, COVID-19?
+    - How is the situation regarding the coronavirus?
+    - How is the situation regarding the COVID-19?
+    - What is the current situation regarding the coronavirus, COVID-19?
+- intent: health_services
+  examples: |
+    - How do I get medical health services?
+    - How to get medical health services?
+    - How to get medical help?
+    - Tell me about medical services
+    - Tell me about health services
+    - How to avail health services?
+    - How to get medical services?
+    - How to avail medical services?
+- intent: form_request
+  examples: |
+    - Where can I find the form for X?
+    - How to get the form for X?
+    - How to get various forms?
+    - Where to get various forms?
+    - Can I get form for X?
+    - Tell me how to get form for X
+    - Tell me where I can find the form for X
+- intent: campus
+  examples: |
+    - What places are there at the campus?
+    - What are there in the campus?
+    - Tell me about the buildings in campus
+    - What are the various buildings present in the campus?
+    - What are the places there in the campus?
+    - Tell me what are there in the campus
+    - What are the places to go in the campus?
+- intent: international_drivers_licence
+  examples: |
+    - Is international driver's licence IDP valid in South Carolina?
+    - Is international driver's licence IDP valid in the univeristy?
+    - Is international driver's licence valid in South Carolina?
+    - Is the licence IDP valid in South Carolina?
+    - Is my international driver's licence IDP valid in South Carolina?
+    - Is my international driver's licence IDP valid in the univeristy?
+    - Is my international driver's licence valid in South Carolina?
+    - Is my the licence IDP valid in South Carolina?
+- intent: foreign_licence
+  examples: |
+    - I am from country X. Is my driving license valid here?
+    - I come from X country. Is my driving license valid here?
+    - I am from X country. Is my driving license valid here?
+    - If I am from X country, is my driving license valid here?
+    - Is my driving license valid here? if I come from X country?
+    - Is my driving license valid here? I come from X country.
+    - Is my driving license valid here? I am from X country.
+- intent: applying_licence
+  examples: |
+    - What documents are required for applying for a car licence?
+    - What are the requirements for applying for a car licence?
+    - What are the required things for applying for a car licence?
+    - What are the requirements for applying for a car licence?
+    - What are the required documents for applying for a car licence?
+    - Tell me about the requirements for applying for a car licence?
+    - Tell me about the requirements of applying for a car licence?
+    - Tell me about the requirements for applying for a car licence?
+    - Tell me about the requirements of applying for a car licence?
+- intent: driving_test
+  examples: |
+    - How to get a driver's licence?
+    - How can I get a driver's licence?
+    - How students can get a driver's licence?
+    - Where will students get a driver's licence?
+    - How to get a driver's licence?
+    - Get me a driver's licence
+    - Tell me how can one get a driver's licence?
+    - Get driver's licence
+- intent: airport_transfer
+  examples: |
+    - How to order a taxi?
+    - How can I get a taxi?
+    - Where to get the taxi?
+    - Get me a taxi
+    - Tell me how to get a taxi
+    - How to find taxi in airport?
+    - Where can I get taxi?
+    - Where to find a taxi?
