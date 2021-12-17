@@ -1,6 +1,6 @@
 ## ChatBot_AIISC
 
-This repo contains my project works performed during my Research Internship at **AI Institute, University of South Carolina, USA** in collaboration with **Indian Institute of Technology, Roorkee** during the time period of **May - August, 2021** under the guidance of **Prof. Biplav Srivastava (AIISC)** and **Prof. Sandeep Kumar (IIT-R)**.
+This repo contains my project works performed during my Research Internship at **AI Institute, University of South Carolina, USA** in collaboration with **Indian Institute of Technology, Roorkee** during the time period of **May - August, 2021** under the guidance of **Prof. Biplav Srivastava (UoSC)** and **Prof. Sandeep Kumar (IIT-R)**.
 
 ## **Project Title**
 
